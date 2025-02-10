@@ -44,7 +44,6 @@ pub async fn user_login(
   email: String,
   password: String,
 ) -> Result<Value, AppError> {
-  println!("{email}, {password}");
   if let Some(user) = state.repo.user().get_user_by_email(&email).await? {
     let matched = hash::verify_bcrypt(&password, &user.password)?;
     if matched {

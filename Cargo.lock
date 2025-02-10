@@ -220,6 +220,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "actixweb-seaorm-openapi-template"
+version = "0.0.1"
+dependencies = [
+ "actix-cors",
+ "actix-web",
+ "chrono",
+ "dotenvy",
+ "envy",
+ "helpers",
+ "lettre",
+ "regex",
+ "sea-orm",
+ "serde",
+ "serde_json",
+ "tracing",
+ "tracing-subscriber",
+ "utoipa",
+ "utoipa-actix-web",
+ "utoipa-swagger-ui",
+]
+
+[[package]]
 name = "addr2line"
 version = "0.24.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1959,28 +1981,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "04cbf5b083de1c7e0222a7a51dbfdba1cbe1c6ab0b15e29fff3f6c077fd9cd9f"
 dependencies = [
  "value-bag",
-]
-
-[[package]]
-name = "main"
-version = "0.0.1"
-dependencies = [
- "actix-cors",
- "actix-web",
- "chrono",
- "dotenvy",
- "envy",
- "helpers",
- "lettre",
- "regex",
- "sea-orm",
- "serde",
- "serde_json",
- "tracing",
- "tracing-subscriber",
- "utoipa",
- "utoipa-actix-web",
- "utoipa-swagger-ui",
 ]
 
 [[package]]
